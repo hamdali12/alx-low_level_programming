@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-print_alphabet.c -o 2-print_alphabet
 /* betty style doc for function main goes there */
 /**
  *main - Entry point of the program
@@ -17,5 +17,5 @@ int main(void)
 
 	putchar('\n');
 
-	return 0;
+	return (0);
 }
