@@ -5,7 +5,7 @@
  *
  * Return: 0 on successful execution
  */
-int main()
+int main(void)
 {
 	print_alphabet();
     	return 0;
