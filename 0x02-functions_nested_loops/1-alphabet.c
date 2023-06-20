@@ -15,7 +15,7 @@ void print_alphabet(void)
 	_putchar('\n');
 }
 
-
+void print_alphabet(void);
 /**
  * main - Entry point of the program
  *
