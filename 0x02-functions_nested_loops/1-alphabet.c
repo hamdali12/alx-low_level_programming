@@ -1,7 +1,8 @@
 #include "main.h"
 
-/*
+/**
  *print alphabet function
+ *lawercase chars
 */
 void print_alphabet(void)
 {
@@ -9,7 +10,7 @@ void print_alphabet(void)
 
 	while (letter <= 'z')
 	{
- 		_putchar(letter);
+		_putchar(letter);
 		letter++;
 	}
 	_putchar('\n');
