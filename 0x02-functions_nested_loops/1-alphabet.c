@@ -1,30 +1,32 @@
 #include "main.h"
 
-/*
-print alphabet function
-*/
-void print_alphabet(void)
-{
-	char letter = 'a';
-
-	while (letter <= 'z')
-	{
-		_putchar(letter);
-		letter++;
-	}
-	_putchar('\n');
-}
-
 void print_alphabet(void);
 /**
  * main - Entry point of the program
  *
  * Return: 0 on successful execution
  */
-int main(void)
+int main() 
 {
- 	print_alphabet();
-	return(0);
+	print_alphabet();
+    	return 0;
 }
+
+/*
+print alphabet function
+*/
+void print_alphabet(void) {
+    char letter = 'a';
+
+    // Print the alphabet using a loop
+    while (letter <= 'z') {
+        putchar(letter);
+        letter++;
+    }
+
+    // Print a new line character
+    putchar('\n');
+}
+
 
 
