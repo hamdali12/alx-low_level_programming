@@ -2,8 +2,9 @@
 
 /**
  *print alphabet function
+ *
  *lawercase chars
-*/
+ */
 void print_alphabet(void)
 {
 	char letter = 'a';
