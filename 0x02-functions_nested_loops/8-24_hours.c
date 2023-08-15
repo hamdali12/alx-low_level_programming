@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_jack_bauer_minutes - Prints every minute of the day of Jack Bauer
+ * jack_bauer - Prints every minute of the day of Jack Bauer
  */
 void jack_bauer(void)
 {
