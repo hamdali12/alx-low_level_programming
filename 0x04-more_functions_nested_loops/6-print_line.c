@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_line - Draws a straight line of underscores
@@ -20,6 +19,3 @@ void print_line(int n)
 		_putchar('\n');
 	}
 }
-
-
-
