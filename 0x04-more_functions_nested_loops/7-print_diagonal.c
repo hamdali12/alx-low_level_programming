@@ -18,10 +18,10 @@ void print_diagonal(int n)
 		{
 			for (int j = 0; j < i; j++)
 			{
-				_putchar(' '); // Print spaces before each backslash
+				_putchar(' ');
 			}
-			_putchar('\\'); // Print a backslash for each row
-			_putchar('\n'); // Print a newline after each row
+			_putchar('\\');
+			_putchar('\n');
 		}
 	}
 }
