@@ -1,23 +1,18 @@
 #include "main.h"
 
-/**
- * print_line - Draws a straight line of underscores
- * @n: The number of times the character '_' should be printed
- */
 void print_line(int n)
-{	
+{
 	int i;
-
 	if (n <= 0)
 	{
-		_putchar('\n');
+		_putchar('\n'); // Print a newline for n <= 0
 	}
 	else
 	{
 		for (i = 0; i < n; i++)
 		{
-			_putchar('_');
+			_putchar('_'); // Print '_' n times
 		}
-		_putchar('\n');
+		_putchar('\n'); // Print a newline after the line
 	}
 }
