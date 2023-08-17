@@ -5,8 +5,8 @@
  * @n: The number of times the character '\' should be printed
  */
 void print_diagonal(int n)
-{ 
-	int i,j;
+{
+	int i, j;
 
 	if (n <= 0)
 	{
