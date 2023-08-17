@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+
+/**
+ * main - Prints the FizzBuzz sequence
+ *
+ * Return: Always 0
+ */
 int main(void)
 {	
 	int i;
