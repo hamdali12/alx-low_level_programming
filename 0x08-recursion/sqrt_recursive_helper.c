@@ -9,12 +9,12 @@ include <stdio.h>
  */
 int sqrt_recursive_helper(int n, int g)
 {
-	if (guess * g == n)
+	if (g * g == n)
 	{
 		return (g);
 	}
 
-	if (guess * g > n)
+	if (g * g > n)
 	{
 		return (-1);
 	}
