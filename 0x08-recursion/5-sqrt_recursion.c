@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursive_helper - Recursive helper function tofind the natural square root
+ * _sqrt_recursive_helper - Recursive helper function tofind the natural square
  * @n: The number for which the square root is to be calculated.
  * @guess: The current guess for the square root.
  *
