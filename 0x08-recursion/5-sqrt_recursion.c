@@ -42,5 +42,5 @@ int _sqrt_recursive_helper(int n, int guess)
 		return (-1);
 	}
 
-	return _sqrt_recursive_helper((n, guess + 1));
+	return (_sqrt_recursive_helper(n, guess + 1));
 }
