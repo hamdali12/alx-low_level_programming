@@ -1,5 +1,26 @@
 #include <stdio.h>
 
+/**
+ * _sqrt_recursive_helper - Recursive helper function to find the natural square root.
+ * @n: The number for which the square root is to be calculated.
+ * @guess: The current guess for the square root.
+ *
+ * Return: The natural square root of 'n'.
+ */
+int _sqrt_recursive_helper(int n, int guess)
+{
+	if (guess * guess == n)
+	{
+		return (guess);
+	}
+
+	if (guess * guess > n)
+	{
+		return (-1);
+	}
+
+	return (_sqrt_recursive_helper(n, guess + 1));
+}
 
 /**
  * _sqrt_recursion - Returns the natural square root of a number recursively.
@@ -21,26 +42,4 @@ int _sqrt_recursion(int n)
 	}
 
 	return (_sqrt_recursive_helper(n, 1));
-}
-
-/**
- * _sqrt_recursive_helper - Recursive helper function to find the natural square root.
- * @n: The number for which the square root is to be calculated.
- * @guess: The current guess for the square root.
- *
- * Return: The natural square root of 'n'.
- */
-int _sqrt_recursive_helper(int n, int guess)
-{
-	if (guess * guess == n)
-	{
-		return (guess);
-	}
-
-	if (guess * guess > n)
-	{
-		return (-1);
-	}
-
-	return (_sqrt_recursive_helper(n, guess + 1));
 }
