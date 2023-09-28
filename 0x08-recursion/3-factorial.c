@@ -8,15 +8,15 @@
  */
 int factorial(int n)
 {
-    if (n < 0) // Check for an error condition (negative 'n')
+    if (n < 0)
     {
         return -1;
     }
     
-    if (n == 0) // Base case: factorial of 0 is 1
+    if (n == 0)
     {
         return 1;
     }
     
-    return n * factorial(n - 1); // Recursive calculation of factorial
+    return n * factorial(n - 1);
 }
