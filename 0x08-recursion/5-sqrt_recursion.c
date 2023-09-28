@@ -11,15 +11,15 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 	{
-		return -1;
+		return (-1);
 	}
 
 	if (n == 0 || n == 1)
 	{
-		return n;
+		return (n);
 	}
 
-	return sqrt_recursive_helper(n, 1); // Call the recursive helper function
+	return (sqrt_recursive_helper(n, 1));
 }
 
 /**
@@ -33,13 +33,13 @@ int sqrt_recursive_helper(int n, int g)
 {
 	if (guess * guess == n)
 	{
-		return guess;
+		return (guess);
 	}
 
 	if (guess * guess > n)
 	{
-		return -1;
+		return (-1);
 	}
 
-	return _sqrt_recursive_helper(n, guess + 1);
+	return (sqrt_recursive_helper(n, guess + 1));
 }
