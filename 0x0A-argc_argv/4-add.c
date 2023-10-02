@@ -11,7 +11,7 @@
 bool is_positive_number(const char *str)
 {
 	int i;
-	
+
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (!(str[i] >= '0' && str[i] <= '9'))
@@ -47,11 +47,11 @@ int main(int argc, char *argv[])
 		{
 		printf("Error\n");
 		return (1);
-    	}
+		}
+		
+		num = atoi(argv[i]);
 
-    	num = atoi(argv[i]);
-
-    	if (num < 0)
+		if (num < 0)
 		{
 			continue;
 		}
