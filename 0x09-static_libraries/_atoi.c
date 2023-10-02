@@ -1,7 +1,7 @@
 #include "main.h"
 
 
-int _atoi(int n)
+int _atoi(char *s)
 {
 	
 }
