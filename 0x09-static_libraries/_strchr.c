@@ -1,7 +1,7 @@
 #include "main.h"
 
 
-int _isupper(int c)
+int char *_strchr(char *s, char c)
 {
 
 }
