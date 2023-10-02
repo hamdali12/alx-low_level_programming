@@ -1,7 +1,7 @@
 #include "main.h"
 
 
-int _memcpy(int c)
+int _memcpy(char *dest, char *src, unsigned int n)
 {
 	
 }
