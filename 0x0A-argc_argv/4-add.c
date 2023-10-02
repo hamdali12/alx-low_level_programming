@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+/**
+ * is_positive_number - Checks if a string represents a positive number.
+ * @str: The string to be checked.
+ *
+ * Return: true if the string is a positive number, false otherwise.
+ */
 bool is_positive_number(const char *str)
 {
 	int i;
@@ -16,10 +22,17 @@ bool is_positive_number(const char *str)
 	return (true);
 }
 
+/**
+ * main - Entry point of the program.
+ * @argc: The number of command-line arguments.
+ * @argv: An array of strings containing the command-line arguments.
+ *
+ * Return: 0 on success, 1 on error.
+ */
 int main(int argc, char *argv[])
 {
 	int sum, i, num;
-	
+
 	if (argc == 1)
 	{
 		printf("0\n");
@@ -32,8 +45,8 @@ int main(int argc, char *argv[])
 	{
 		if (!is_positive_number(argv[i]))
 		{
-    		printf("Error\n");
-    		return (1);
+		printf("Error\n");
+		return (1);
     	}
 
     	num = atoi(argv[i]);
