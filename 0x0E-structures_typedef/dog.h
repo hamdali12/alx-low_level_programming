@@ -27,6 +27,6 @@ struct dog
  * Description: This function initializes a struct dog with the provided
  * values for name, age, and owner.
  */
-void init_dog(struct dog *d, char *name, float age, char *owner);
+
 
 #endif /* DOG_H */
