@@ -27,15 +27,15 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_sub - Returns the difference of a and b.
+ * op_mul - Returns the product of a and b.
  * @a: The first integer
  * @b: The second integer
  *
- * Return: The difference of a and b.
+ * Return: The product of a and b.
  */
-int op_sub(int a, int b)
+int op_mul(int a, int b)
 {
-	return (a - b);
+    return (a * b);
 }
 
 /**
