@@ -11,27 +11,29 @@ void print_all(const char * const format, ...)
 	va_list args;
 	int skip_separator;
 	char *separator;
+	int i;
 
+	i = 0;
 	separator = "";
 	va_start(args, format);
 
-	while (format && *format)
+	while (format[i])
 	{
 		skip_separator = 0;
 
-		if (*format == 'c')
+		if (format[i] == 'c')
 		{
 			printf("%s%c", separator, va_arg(args, int));
 		}
-		else if (*format == 'i')
+		else if (format[i] == 'i')
 		{
 			printf("%s%d", separator, va_arg(args, int));
 		}
-		else if(*format == 'f')
+		else if(format[i] == 'f')
 		{
 			printf("%s%f", separator, va_arg(args, double));
 		}
-		else if(*format == 's')
+		else if(format[i] == 's')
 		{
 			char *str = va_arg(args, char *);
 			if (str == NULL)
@@ -53,7 +55,7 @@ void print_all(const char * const format, ...)
 			separator = ", ";
 		}
 
-		format++;
+		i++;
 	}
 
 	va_end(args);
