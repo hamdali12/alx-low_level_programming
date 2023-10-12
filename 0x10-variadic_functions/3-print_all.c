@@ -53,7 +53,7 @@ void print_all(const char * const format, ...)
 			separator = ", ";
 		}
 
-		format++;
+		format+=1;
 	}
 
 	va_end(args);
