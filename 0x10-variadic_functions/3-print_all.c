@@ -8,53 +8,50 @@
  */
 void print_all(const char * const format, ...)
 {
-	va_list args;
-	int skip_separator;
-	char *separator;
+    va_list args;
 	int i;
-
+    
 	i = 0;
-	separator = "";
+    int printed = 0;
 	va_start(args, format);
 
-	while (format[i])
+	while (format && format[i])
 	{
-		skip_separator = 0;
-
-		if (format[i] == 'c')
+		if (printed)
 		{
-			printf("%s%c", separator, va_arg(args, int));
-		}
-		else if (format[i] == 'i')
-		{
-			printf("%s%d", separator, va_arg(args, int));
-		}
-		else if(format[i] == 'f')
-		{
-			printf("%s%f", separator, va_arg(args, double));
-		}
-		else if(format[i] == 's')
-		{
-			char *str = va_arg(args, char *);
-			if (str == NULL)
-			{
-				printf("%s(nil)", separator);
-			}
-			else
-			{
-				printf("%s%s", separator, str);
-			}
-		}
-		else
-		{
-			skip_separator = 1;
+			printf(", ");
 		}
 
-		if (!skip_separator)
+		switch (format[i])
 		{
-			separator = ", ";
-		}
+			case 'c':
+				printf("%c", va_arg(args, int));
+				break;
+			case 'i':
+				printf("%d", va_arg(args, int));
+				break;
+			case 'f':
+				printf("%f", va_arg(args, double));
+				break;
+			case 's':
+                {
+					char *str = va_arg(args, char *);
+					if (str == NULL)
+					{
+						printf("(nil)");
+					}
+					else
+					{
+						printf("%s", str);
+					}
+				}
+				break;
+			default:
+				i++;
+				continue;
+        }
 
+		printed = 1;
 		i++;
 	}
 
