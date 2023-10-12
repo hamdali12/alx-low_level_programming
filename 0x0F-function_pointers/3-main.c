@@ -3,27 +3,42 @@
 #include "3-calc.h"
 #include <string.h>
 
+#include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h> // Include this for exit
+
+/**
+ * main - performs simple operations
+ * @argc: argument count
+ * @argv: argument vector
+ *
+ * Return: Always 0 on success
+ */
 int main(int argc, char *argv[])
 {
+	int num1, num2;
+	int (*func)(int, int);
+	char *operator;
+
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
 
-	int num1;
-	int num2;
-	int (*func)(int, int)
-
 	num1 = atoi(argv[1]);
+	operator = argv[2];
 	num2 = atoi(argv[3]);
-
-	char *operator = argv[2];
 
 	func = get_op_func(operator);
 
-	int result = func(num1, num2);
+	if (func == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
 
-	printf("%d\n", result);
+	printf("%d\n", func(num1, num2));
+
 	return (0);
 }
