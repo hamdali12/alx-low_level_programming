@@ -54,7 +54,7 @@ void print_all(const char * const format, ...)
 			separator = ", ";
 		}
 
-		format++;
+		fmt++;
 	}
 
 	va_end(args);
