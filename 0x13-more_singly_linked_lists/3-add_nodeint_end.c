@@ -1,4 +1,4 @@
-#include <stdlib.h> // Include the stdlib.h header
+#include <stdlib.h>
 #include "lists.h"
 
 /**
