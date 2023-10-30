@@ -1,9 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include <sys/types.h>
-#include <sys/stat.h>
 
 /**
  * create_file - Creates a file with the specified content and permissions.
@@ -35,6 +31,5 @@ int create_file(const char *filename, char *text_content)
 	}
 
 	close(fd);
-
 	return (1);
 }
