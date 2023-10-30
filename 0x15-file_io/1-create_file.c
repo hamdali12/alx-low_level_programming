@@ -1,5 +1,6 @@
 #include <fcntl.h>
 #include <unistd.h>
+#include <string.h>
 
 /**
  * create_file - Creates a file with the specified content and permissions.
